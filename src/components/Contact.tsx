@@ -116,8 +116,8 @@ const Contact = () => {
               rows={5}
               className="bg-card border-border focus:border-primary"
             />
-            <Button variant="hero" type="submit" className="w-full gap-2">
-              <Send size={16} /> Send Message
+            <Button variant="hero" type="submit" className="w-full gap-2" disabled={loading}>
+              <Send size={16} /> {loading ? "Sending..." : "Send Message"}
             </Button>
           </motion.form>
         </div>
